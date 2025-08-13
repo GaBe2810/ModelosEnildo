@@ -3,12 +3,12 @@ socorro
 
 my sql comandos:
 ``` csharp
-create database PontoVirgula_db;
+create database PontoVirgula_db; //cria a database
 create database ExeJd_db;
-drop database PontoVirgula_db;
-use ExeJd_db;
+drop database PontoVirgula_db; // deleta a database
+use ExeJd_db; // usa a database
 
-show databases;
+show databases; // mostra a database
 
 create table aluno_tb(
 Id integer not null, 
@@ -38,4 +38,6 @@ describe tbAluno2_tb;
 alter table tbAluno2_tb add DataNasc date null;
 
 alter table tbAluno2_tb modify DataNasc date not null;
+
+truncate table tbAluno_tb; // tira os gaps da tabela
 ```
